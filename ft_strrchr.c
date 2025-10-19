@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/19 16:21:05 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 17:21:50 by yuonishi         ###   ########.fr       */
+/*   Created: 2025/10/19 17:31:32 by yuonishi          #+#    #+#             */
+/*   Updated: 2025/10/19 18:27:36 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <string.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
 	while (s[i])
+		i++;
+	while (i >= 0)
 	{
 		if (s[i] == c)
 			return ((char *)&s[i]);
-		i++;
+		i--;
 	}
-	if (c == '\0')
-		return ((char *)&s[i]);
 	return (NULL);
 }
 
@@ -35,14 +35,16 @@ void	main(void)
 	char	str[] = "Happy new year";
 	char	*result;
 	int		search;
+	int		deference;
 
-	search = 'n';
-	printf("---strchr---\n");
-	result = strchr(str, search);
+	search = 'y';
+	printf("---strrchr---\n");
+	result = strrchr(str, search);
 	printf("Address: %p\n", result);
-
-	printf("---ft_strchr---\n");
-	result = ft_strchr(str, search);
+	printf("---ft_strrchr---\n");
+	result = ft_strrchr(str, search);
 	printf("Address: %p\n", result);
+	deference = strrchr(str, search) - ft_strrchr(str, search);
+	printf("deference: %d\n", deference);
 }
 */
