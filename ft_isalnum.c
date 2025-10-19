@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:56:18 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 11:02:18 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/19 15:20:19 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_isalnum(int c)
 	if (c >= 'a' && c <= 'z')
 		return (1);
 	return (0);
-}lll
+}
 /*
 void	main(void)
 {
