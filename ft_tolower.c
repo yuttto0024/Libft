@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:30:28 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 12:19:13 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:32:34 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 /*
-void	main(void)
+int	main(void)
 {
 	int	i;
 	int	j;

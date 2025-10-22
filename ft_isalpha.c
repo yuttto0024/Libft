@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:31:58 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 10:53:09 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:31:47 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_isalpha(int c)
 	return (0);
 }
 /*
-void	main(void)
+int	main(void)
 {
 	int	i;
 	int	j;

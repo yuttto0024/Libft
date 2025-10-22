@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:06:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 11:17:02 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:31:54 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isascii(int c)
 	return (0);
 }
 /*
-void	main(void)
+int	main(void)
 {
 	int	i;
 	int	j;

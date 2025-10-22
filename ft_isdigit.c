@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:38:31 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 10:51:27 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:32:02 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isdigit(int c)
 	return (0);
 }
 /*
-void	main(void)
+int	main(void)
 {
 	int	i;
 	int	j;

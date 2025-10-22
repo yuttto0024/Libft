@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 15:21:34 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 16:01:41 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:32:23 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlen(const	char *s)
 }
 
 /*
-void	main(void)
+int	main(void)
 {
 	char	test1[] = "Happy";
 	size_t	l;

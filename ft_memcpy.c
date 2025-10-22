@@ -6,17 +6,19 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 20:59:36 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 21:10:49 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:41:20 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+//#include <string.h>
+//#include <stdio.h>
 
-void	ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t i;
+	size_t	i;
+	void	*original_dest;
 
+	original_dest = dest;
 	if (dest == NULL || src == NULL)
 		return (dest);
 	i = 0;
@@ -25,5 +27,24 @@ void	ft_memcpy(void *dest, const void *src, size_t n)
 		((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
 		i++;
 	}
-	return (dest);
+	return (original_dest);
 }
+
+/*
+int main(void)
+{
+	char	src[] = "42 Tokyo!";
+	char	dest1[] = "--------------------"; 
+	char	dest2[] = "--------------------" ;
+	size_t	i;
+	
+	i = 8;
+	printf("---memset---\n");
+	memcpy(dest1, src, i);
+	printf("%s\n", dest1);
+	printf("---ft_memset---\n");
+    ft_memcpy(dest2, src, i);
+	printf("%s\n", dest2);
+	return (0);
+}
+*/

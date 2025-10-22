@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:56:18 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 15:20:19 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:31:39 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_isalnum(int c)
 	return (0);
 }
 /*
-void	main(void)
+int	main(void)
 {
 	int	i;
 	int	j;

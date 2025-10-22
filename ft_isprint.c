@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:20:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 11:24:55 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 20:32:08 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_isprint(int c)
 	return (1);
 }
 /*
-void	main(void)
+int	main(void)
 {
 	int	i;
 	int	j;

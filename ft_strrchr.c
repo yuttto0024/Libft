@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 17:31:32 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 18:27:36 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/22 17:44:39 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 /*
-void	main(void)
+int	main(void)
 {
 	char	str[] = "Happy new year";
 	char	*result;
