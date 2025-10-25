@@ -6,12 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:15:59 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/25 20:43:18 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/25 21:03:37 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+//#include <stdio.h>
+//#include <stdlib.h>
 
 size_t	ft_strlen(const char *t)
 {
@@ -23,26 +23,29 @@ size_t	ft_strlen(const char *t)
 	return (len);
 }
 
+static char	*ft_alloc_empty_str(void)
+{
+	char	*sub_str;
+
+	sub_str = (char *)malloc(1);
+	if (sub_str == NULL)
+		return (NULL);
+	sub_str[0] = '\0';
+	return (sub_str);
+}
+
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	size;
 	size_t	str_len;
 	char	*sub_str;
-	size_t		i;
-	
+	size_t	i;
+
 	if (s == NULL)
 		return (NULL);
 	str_len = ft_strlen(s);
-
 	if (start > str_len)
-	{
-		sub_str = (char *)malloc(1);
-		if (sub_str == NULL)
-			return (NULL);
-		sub_str[0] = '\0';
-		return (sub_str);
-	}
-
+		return (ft_alloc_empty_str());
 	size = ft_strlen(s + start);
 	if (size > len)
 		size = len;
@@ -52,13 +55,14 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	i = 0;
 	while (size > i)
 	{
-		sub_str[i] = s[start + i];		
+		sub_str[i] = s[start + i];
 		i++;
 	}
 	sub_str[i] = '\0';
 	return (sub_str);
 }
 
+/*
 int	main(void)
 {
 	const char		src[] = "HappyHoliday";
@@ -72,3 +76,4 @@ int	main(void)
 	printf("%s", p);
 	free(p);
 }
+*/
