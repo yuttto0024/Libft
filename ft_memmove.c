@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:05:23 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/25 10:50:56 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/25 13:42:09 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (unsigned char *)src;
 	if (d == s || n == 0)
 		return (dest);
-	if (d > s	dest1 = &test1[1];
-	src1 = &test1[3];
-	ft_memmove(dest1, src1, 3);
-	printf("%s\n," test1;)
-)
+	if (d > s)
 		ft_copy_backward(d, s, n);
 	else
 		ft_copy_forward(d, s, n);

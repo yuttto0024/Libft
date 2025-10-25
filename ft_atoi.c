@@ -6,12 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 10:52:15 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/25 13:34:11 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/25 13:40:48 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+//#include <stdio.h>
+//#include <stdlib.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -29,15 +29,17 @@ int	ft_atoi(const char *nptr)
 	if (nptr[i] == '+' || nptr[i] == '-')
 		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{	
+	{
 		result = (result * 10) + (nptr[i] - '0');
 		i++;
 	}
 	return (result * sign);
 }
 
+/*
 int	main(void)
 {
 	char	test[] = "-2147483648";
 	printf("%d", ft_atoi(test));
 }
+*/
