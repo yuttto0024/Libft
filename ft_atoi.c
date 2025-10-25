@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 10:52:15 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/25 12:12:41 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/25 13:34:11 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_atoi(const char *nptr)
 {
-	long	result;
+	int		result;
 	size_t	i;
 	int		sign;
 
@@ -33,15 +33,11 @@ int	ft_atoi(const char *nptr)
 		result = (result * 10) + (nptr[i] - '0');
 		i++;
 	}
-	if (result * sign > 2147483647)
-		return (2147483647);
-	if (result * sign < -2147483648)
-		return (-2147483648);
-	return (int)(result * sign);
+	return (result * sign);
 }
 
 int	main(void)
 {
 	char	test[] = "-2147483648";
-	printf("%d", atoi(test));
+	printf("%d", ft_atoi(test));
 }
