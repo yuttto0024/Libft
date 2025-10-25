@@ -6,12 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 21:09:39 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/25 21:36:12 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/25 21:37:46 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+//#include <stdio.h>
+//#include <stdlib.h>
 
 size_t	ft_strlen(char const *str)
 {
@@ -61,6 +61,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (dual);
 }
 
+/*
 int	main(void)
 {
 	char	s1[] = "Happy";
@@ -71,3 +72,4 @@ int	main(void)
 	printf("%s", p);
 	free(p);
 }
+*/
