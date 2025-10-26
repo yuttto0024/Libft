@@ -1,16 +1,7 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/26 10:29:32 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 11:49:56 by yuonishi         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include <stdio.h>
+#include <stdlib.h>
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	len;
 
@@ -20,48 +11,93 @@ size_t	ft_strlen(char *str)
 	return (len);
 }
 
-int	ft_is_set()
+char	*ft_strchr(const char *s, int c)
 {
+	int	i;
 
-}
-
-char	*ft_strchr(char const *s, char const *set, int t)
-{
-
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return ((char *)&s[i]);
+		i++;
+	}
+	if (c == '\0')
+		return ((char *)&s[i]);
+	return (NULL);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trim;
-	size_t	trim_len;
+	char	*p;
 	size_t	s1_len;
-	size_t	i;
-	size_t	j;
 	size_t	start;
 	size_t	end;
+	size_t	trim_len;
+	size_t	i;
 
-	s1_len = ft_strlen;
-	i = 0;
-	while (i < s1_len)
+	if (s1 == NULL)
+		return (NULL);
+	// ft_strdup
+	if (set == NULL)
 	{
-		if (s[i] != c)
-			start = &s[i];
-		i++;
+		s1_len = ft_strlen(s1);
+		trim = (char *)malloc(s1_len + 1);
+		if (trim == NULL)
+			return (NULL);
+		i = 0;
+		while (i < s1_len)
+		{
+			trim[i] = s1[i];
+			i++;
+		}
+		trim[i] = '\0';
+		return (trim);
 	}
-	while (s1len > 0)
+	start = 0;
+	while (s1[start])
 	{
-		if (s[s1_len] != c)
-			end = &s[s1_len];
-		s1_len--;
+		p = ft_strchr(set, s1[start]);
+		if (p == NULL)
+			break;
+		start++;
+	}
+	s1_len = ft_strlen(s1);
+	if (start == s1_len)
+	{
+		trim = (char *)malloc(1);
+		trim[0] = '\0';
+		return (trim); 
+	}
+	end = s1_len - 1;
+	while (end > start)
+	{
+		p = ft_strchr(set, s1[end]);
+		if (p == NULL)
+			break;	
+		end--;
 	}
 	trim_len = end - start + 1;
-	trim = (char *)malloc(trim_len);
+	trim = (char *)malloc(trim_len + 1);
 	if (trim == NULL)
 		return (NULL);
-	while (trim_len > j)
+	i = 0;
+	while (trim_len > i)
 	{
-		trim[j] = s1[start + j]; 
-		j++;
+		trim[i] = s1[start + i]; 
+		i++;
 	}
+	trim[i] = '\0';
 	return (trim);
+}
+
+int	main(void)
+{
+	char	s1[] = "-abHappyaab";
+	char	set[] = "ab-";
+	char	*trim;
+
+	trim = ft_strtrim(s1, set);
+	printf("%s", trim);
 }
