@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:43:45 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 16:44:06 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:00:35 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	**ft_split(char const *s, char c);
 
 #endif
