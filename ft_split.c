@@ -6,11 +6,11 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:10:06 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 17:46:22 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:31:00 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libht.h"
+#include "libft.h"
 
 static size_t	ft_word_count(char const *s, char c)
 {
@@ -21,36 +21,84 @@ static size_t	ft_word_count(char const *s, char c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == c || s[i] == '\0')
+		while (s[i] == c)
 			i++;
-		else
-			while (s[i] != c && s[i] != '\0')
-				i++;
+		if (s[i] != '\0')
+		{
 			wc++;
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+		}
 	}
 	return (wc);
 }
 
-static void	*free_all(char **result, size_t i)
+static void	free_all(char **result, size_t i)
 {
-
-}
-
-static char	**ft_word_dup()
-{
-
+	while (i > 0)
+	{
+		i--;
+		free(result[i]);
+	}
+	free(result);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	wc;
-	char	**p;
+	char			**p;
+	size_t			wc;
+	size_t			i;
+	size_t			j;
+	size_t			len;
+	unsigned int	start;
 
 	if (s == NULL)
 		return (NULL);
 	wc = ft_word_count(s, c);
-	p  = (char *)malloc(wc + 1);
+	p  = (char **)ft_calloc(sizeof(char *) * (wc + 1), 1);
 	if (p == NULL)
 		return (NULL);
-	
+	i = 0;
+	j = 0;
+	while (wc > i)
+	{
+		while (s[j] == c)
+			j++;
+		start = (unsigned int)j;
+		len = 0;
+		while (s[j] && s[j] != c)
+		{
+			j++;
+			len++;
+		}
+		p[i] = ft_substr(s, start, len);
+		if (p[i] == NULL)
+			free_all(p, i);
+		i++;
+	}
+	return (p);
+}
+
+int	main(void)
+{
+	char	test[] = "---Happy--Hallowee-nnn";
+	char	c;
+	char	**t;
+	size_t	i;
+
+	c = '-';
+	t = ft_split(test, c);
+	i = 0;
+	while (t[i]) 
+	{
+		printf("%s\n", t[i]);
+		i++;
+	}
+	i = 0;
+	while (t[i])
+	{
+		free(t[i]);
+		i++;
+	}
+	free(t);
 }
