@@ -6,23 +6,11 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 16:15:59 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:50:52 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:01:54 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <stdlib.h>
 #include "libft.h"
-
-size_t	ft_strlen(const char *t)
-{
-	size_t	len;
-
-	len = 0;
-	while (t[len])
-		len++;
-	return (len);
-}
 
 static char	*ft_alloc_empty_str(void)
 {
