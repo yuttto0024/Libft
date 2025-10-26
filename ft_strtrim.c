@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:39:20 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 17:07:54 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 17:09:51 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_memcpy(trim, s1 + start, trim_len);
 	return (trim);
 }
+
 /*
 int	main(void)
 {
