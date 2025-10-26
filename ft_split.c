@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:10:06 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 19:31:00 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 19:57:54 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static size_t	ft_word_count(char const *s, char c)
 	return (wc);
 }
 
-static void	free_all(char **result, size_t i)
+static void	*free_all(char **result, size_t i)
 {
 	while (i > 0)
 	{
@@ -41,23 +41,16 @@ static void	free_all(char **result, size_t i)
 		free(result[i]);
 	}
 	free(result);
+	return (NULL);
 }
 
-char	**ft_split(char const *s, char c)
+static char	**ft_fill_array(char const *s, char c, char **p, size_t wc)
 {
-	char			**p;
-	size_t			wc;
 	size_t			i;
 	size_t			j;
 	size_t			len;
 	unsigned int	start;
 
-	if (s == NULL)
-		return (NULL);
-	wc = ft_word_count(s, c);
-	p  = (char **)ft_calloc(sizeof(char *) * (wc + 1), 1);
-	if (p == NULL)
-		return (NULL);
 	i = 0;
 	j = 0;
 	while (wc > i)
@@ -73,12 +66,27 @@ char	**ft_split(char const *s, char c)
 		}
 		p[i] = ft_substr(s, start, len);
 		if (p[i] == NULL)
-			free_all(p, i);
+			return (free_all(p, i));
 		i++;
 	}
 	return (p);
 }
 
+char	**ft_split(char const *s, char c)
+{
+	char			**p;
+	size_t			wc;
+
+	if (s == NULL)
+		return (NULL);
+	wc = ft_word_count(s, c);
+	p = (char **)ft_calloc(sizeof(char *) * (wc + 1), 1);
+	if (p == NULL)
+		return (NULL);
+	return (ft_fill_array(s, c, p, wc));
+}
+
+/*
 int	main(void)
 {
 	char	test[] = "---Happy--Hallowee-nnn";
@@ -102,3 +110,4 @@ int	main(void)
 	}
 	free(t);
 }
+*/
