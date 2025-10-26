@@ -1,9 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/10/26 16:43:45 by yuonishi          #+#    #+#             */
+/*   Updated: 2025/10/26 16:44:06 by yuonishi         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+# include <string.h>
+# include <stdio.h>
 
 int		ft_atoi(const char *nptr);
 void	*ft_bzero(void *s, size_t n);
@@ -34,4 +48,3 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 #endif
-

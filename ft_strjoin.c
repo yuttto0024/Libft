@@ -6,25 +6,11 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 21:09:39 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:50:05 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 16:40:31 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <stdlib.h>
 #include "libft.h"
-
-size_t	ft_strlen(char const *str)
-{
-	size_t	len;
-
-	if (str == NULL)
-		return (0);
-	len = 0;
-	while (str[len])
-		len++;
-	return (len);
-}
 
 static void	ft_join_and_copy(char *dst, const char *s1, const char *s2)
 {

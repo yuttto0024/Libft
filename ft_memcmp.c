@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 21:23:24 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:49:13 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 15:01:17 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*t1;
 	const unsigned char	*t2;
 	size_t				i;
-	int					deff;
 
 	t1 = (const unsigned char *)s1;
 	t2 = (const unsigned char *)s2;
