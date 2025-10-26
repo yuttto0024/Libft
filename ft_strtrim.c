@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <libht.h>
 
 size_t	ft_strlen(const char *str)
 {
@@ -39,7 +40,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (s1 == NULL)
 		return (NULL);
-	// ft_strdup
 	if (set == NULL)
 	{
 		s1_len = ft_strlen(s1);
