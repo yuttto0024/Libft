@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <libht.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
@@ -40,21 +40,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (s1 == NULL)
 		return (NULL);
+	if (s1 )
 	if (set == NULL)
-	{
-		s1_len = ft_strlen(s1);
-		trim = (char *)malloc(s1_len + 1);
-		if (trim == NULL)
-			return (NULL);
-		i = 0;
-		while (i < s1_len)
-		{
-			trim[i] = s1[i];
-			i++;
-		}
-		trim[i] = '\0';
-		return (trim);
-	}
+		trim = ft_strdup(s1);
 	start = 0;
 	while (s1[start])
 	{

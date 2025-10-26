@@ -6,12 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 19:02:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/19 20:52:33 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 14:49:31 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <string.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

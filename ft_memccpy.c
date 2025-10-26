@@ -6,12 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 18:36:07 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/24 19:02:23 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 14:48:55 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <string.h>
+#include "libft.h"
 
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {

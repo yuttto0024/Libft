@@ -6,12 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 20:38:02 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/22 21:21:51 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 14:49:08 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <string.h>
 //#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

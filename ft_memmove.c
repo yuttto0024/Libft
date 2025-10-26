@@ -6,12 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:05:23 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/25 13:42:09 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 14:49:25 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <string.h>
+#include "libft.h"
 
 static void	ft_copy_backward(unsigned char *d, const unsigned char *s, size_t n)
 {

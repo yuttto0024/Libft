@@ -6,12 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:38:31 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/22 20:32:02 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 14:48:34 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-//#include <ctype.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

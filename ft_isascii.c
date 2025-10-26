@@ -6,12 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:06:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/22 20:31:54 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/26 14:48:04 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <ctype.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
