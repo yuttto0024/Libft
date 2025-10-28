@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:10:06 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 19:57:54 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/28 17:14:07 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ char	**ft_split(char const *s, char c)
 /*
 int	main(void)
 {
-	char	test[] = "---Happy--Hallowee-nnn";
+	char	test[] = "This-Happy-pen------";
 	char	c;
 	char	**t;
 	size_t	i;

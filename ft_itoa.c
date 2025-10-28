@@ -19,7 +19,21 @@ int	ft_digit_caluc(long ln)
 	return (1 + ft_digit_caluc(ln / 10));
 }
 
-char *ft_itoa(int n)
+static char	*ft_fill_string(char *p, int ln, int len, int is_negative)
+{
+	len--;
+	while (ln > 0)
+	{
+		p[len] = (ln % 10) + '0';
+		ln = ln / 10;
+		len--;
+	}
+	if (is_negative)
+		p[0] = '-';
+	return (p);
+}
+
+char	*ft_itoa(int n)
 {
 	int		len;
 	long	ln;
@@ -42,22 +56,15 @@ char *ft_itoa(int n)
 	p = (char *)ft_calloc(len + 1, 1);
 	if (p == NULL)
 		return (NULL);
-	len--;
-	while (ln > 0)
-	{
-		p[len] = (ln % 10) + '0';
-		ln = ln % 10;
-		len--;
-	}
-	if (is_negative)
-		p[0] = '-';
-	return (p);
+	return (ft_fill_string(p, ln, len, is_negative));
 }
 
+/*
 int	main(void)
 {
 	char	*p;
 
-	p = ft_itoa(123456789);
-	printf("%s", p);
+	p = ft_itoa(-123456789);
+	printf("%s\n", p);
 }
+*/
