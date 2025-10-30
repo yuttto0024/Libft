@@ -1,59 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/30 16:33:22 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/30 16:33:22 by yuonishi         ###   ########.fr       */
+/*   Created: 2025/10/30 17:31:26 by yuonishi          #+#    #+#             */
+/*   Updated: 2025/10/30 17:31:26 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-static char	ft_test_function(unsigned int i, char c)
+static void	ft_test_function(unsigned int i, char *p)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + ('a' -  'A'));
-	if (c >= 'a' && c <= 'z')
-		return (c - ('a' -  'A'));
-	return (c);
+	if (i % 2 == 0)
+		*p = 'Z';
 }
 */
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	char	*p;
-	int		len;
-	int		i;
+	unsigned int	i;
 
 	if (s == NULL || f == NULL)
-		return (NULL);
-	len = ft_strlen(s);
-	p = (char *)ft_calloc(len + 1, 1);
-	if (p == NULL)
-		return (NULL);
+		return ;
 	i = 0;
 	while (s[i])
 	{
-		p[i] = f(i, s[i]);
+		f(i, &s[i]);
 		i++;
 	}
-	return (p);
 }
 
 /*
 int	main(void)
 {
-	char	*p;
 	char	str[] = "Happy";
 
-	p = ft_strmapi(str, &ft_test_function);
 	printf("Before:%s\n", str);
-	printf("After :%s\n", p);
-	free(p);
+	ft_striteri(str, &ft_test_function);
+	printf("After :%s\n", str);
 	return (0);
 }
 */
