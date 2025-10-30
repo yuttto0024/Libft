@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:43:45 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 20:00:35 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/30 17:50:33 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdint.h>
 # include <string.h>
 # include <stdio.h>
+# include <fcntl.h>
 
 int		ft_atoi(const char *nptr);
 void	*ft_bzero(void *s, size_t n);
