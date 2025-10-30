@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 20:03:53 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 20:49:20 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/30 18:53:18 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ char	*ft_itoa(int n)
 	int		len;
 	long	ln;
 	char	*p;
-	int		i;
 	int		is_negative;
 
 	if (n == 0)
