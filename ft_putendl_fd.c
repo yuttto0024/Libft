@@ -18,6 +18,7 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putchar_fd('\n', fd);
 }
 
+/*
 int	main(void)
 {
 	int		fd;
@@ -33,3 +34,4 @@ int	main(void)
 	close(fd);
 	return (0);
 }
+*/

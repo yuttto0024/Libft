@@ -6,13 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 20:03:53 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/30 18:53:18 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/31 13:20:18 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_digit_caluc(long ln)
+static int	ft_digit_caluc(long ln)
 {
 	if (ln < 10)
 		return (1);
