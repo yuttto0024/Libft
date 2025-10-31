@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:43:45 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 15:59:35 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/10/31 17:29:06 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 char	*ft_itoa(int n);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+t_list	*ft_lstnew(void *content);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
