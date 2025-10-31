@@ -20,6 +20,7 @@ SRCS = \
 	ft_itoa.c \
 	ft_lstadd_front_bonus.c \
 	ft_lstnew_bonus.c \
+	ft_lstsize_bonus.c \
 	ft_memccpy.c \
 	ft_memchr.c \
 	ft_memcmp.c \
