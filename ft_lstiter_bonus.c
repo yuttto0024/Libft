@@ -6,15 +6,16 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 11:52:33 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 12:34:48 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 13:05:19 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
 static void	del(void *content)
 {
-	printf("I'll delete →  %s\n", (char *)content);
+	printf("Delete→%s\n", (char *)content);
 	free(content);
 }
 
@@ -36,6 +37,7 @@ static void	test_func(void *content)
 		i++;
 	}
 }
+*/
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
@@ -48,6 +50,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	}
 }
 
+/*
 int	main(void)
 {
 	t_list	*first_add;
@@ -64,3 +67,4 @@ int	main(void)
 	printf("node2:%s\n", (char *)first_add->next->content);
 	ft_lstclear(&first_add, del);
 }
+*/
