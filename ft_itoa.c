@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 20:03:53 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 13:20:18 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 15:21:47 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ char	*ft_itoa(int n)
 
 	if (n == 0)
 		return (ft_strdup("0"));
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	ln = (long)n;
 	is_negative = 0;
 	if (ln < 0)
@@ -63,7 +65,7 @@ int	main(void)
 {
 	char	*p;
 
-	p = ft_itoa(-123456789);
+	p = ft_itoa(-2147483648);
 	printf("%s\n", p);
 }
 */
