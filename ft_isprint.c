@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:20:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:48:43 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 15:47:05 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,9 @@
 
 int	ft_isprint(int c)
 {
-	if ((c >= '\0' && c <= 31) || c == 127)
-		return (0);
-	return (1);
+	return (c >= 32 && c<= 126);
 }
+
 /*
 int	main(void)
 {
@@ -29,8 +28,8 @@ int	main(void)
 	int	l;
 
 	i = '\0';
-	j = '<';
-	k = '!';
+	j = '\200';
+	k = EOF;
 	printf("---isprint---\n");
 	l = isprint(i);
 	printf("i:%d\n", l);
