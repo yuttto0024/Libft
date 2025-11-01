@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 17:37:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 17:57:51 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 12:36:55 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_lstsize(t_list *lst)
 	count = 0;
 	while (lst != NULL)
 	{
-		lst = lst -> next;
+		lst = lst->next;
 		count++;
 	}
 	return (count);
@@ -41,8 +41,8 @@ int	main(void)
 	ft_lstadd_front(&first_add, node2);
 	ft_lstadd_front(&first_add, node1);
 	printf("node_len:%d\n", ft_lstsize(first_add));
-	free(first_add -> next -> next);
-	free(first_add -> next);
+	free(first_add->next->next);
+	free(first_add->next);
 	free(first_add);
 }
 */

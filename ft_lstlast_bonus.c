@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 18:26:05 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 19:16:44 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 12:35:06 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
 		return (NULL);
-	while (lst -> next != NULL)
-		lst = lst -> next;
+	while (lst->next != NULL)
+		lst = lst->next;
 	return (lst);
 }
 
@@ -38,6 +38,6 @@ int	main(void)
 	ft_lstadd_front(&first_add, node2);
 	ft_lstadd_front(&first_add, node1);
 	last_add = ft_lstlast(first_add);
-	printf("%s", (char *)last_add -> content);
+	printf("%s", (char *)last_add->content);
 }
 */

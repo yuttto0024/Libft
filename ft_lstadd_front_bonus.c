@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 16:18:12 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 17:31:42 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 12:33:34 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (lst == NULL || new == NULL)
 		return ;
-	new -> next = *lst;
+	new->next = *lst;
 	*lst = new;
 }
 
@@ -34,9 +34,9 @@ int	main(void)
 	printf("node1:%s\n", (char *)first_add->content);
 	ft_lstadd_front(&first_add, node2);
 	printf("node2:%s\n", (char *)first_add->content);
-	if (first_add == node2 && first_add -> next == node1)
-		printf("Linked node2 -> node1\n");
-	free(first_add -> next);
+	if (first_add == node2 && first_add->next == node1)
+		printf("Linked node2->node1\n");
+	free(first_add->next);
 	free(first_add);
 	return (0);
 }

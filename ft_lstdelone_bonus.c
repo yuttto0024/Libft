@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 19:58:39 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 20:48:42 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 12:34:37 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 static void	del(void *content)
 {
-	printf("I'll delete → %s\n", (char *)content);
+	printf("Delete→%s\n", (char *)content);
 	free(content);
 }
 */
@@ -24,7 +24,7 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst == NULL || del == NULL)
 		return ;
-	del(lst -> content);
+	del(lst->content);
 	free(lst);
 }
 

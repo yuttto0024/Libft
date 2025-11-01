@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 19:22:32 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 19:52:18 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 12:32:49 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,10 @@ int	main(void)
 	ft_lstadd_front(&first_add, node3);
 	ft_lstadd_back(&first_add, node4);
 	last_add = ft_lstlast(first_add);
-	printf("%s\n", (char *)last_add -> content);
-	free(first_add -> next -> next -> next);
-	free(first_add -> next -> next);
-	free(first_add -> next);
+	printf("%s\n", (char *)last_add->content);
+	free(first_add->next->next->next);
+	free(first_add->next->next);
+	free(first_add->next);
 	free(first_add);
 }
 */

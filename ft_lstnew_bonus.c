@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 15:27:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 16:10:59 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 12:36:28 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ t_list	*ft_lstnew(void *content)
 	new_node = malloc(sizeof(t_list));
 	if (new_node == NULL)
 		return (NULL);
-	new_node -> content = content;
-	new_node -> next = NULL;
+	new_node->content = content;
+	new_node->next = NULL;
 	return (new_node);
 }
 
@@ -36,11 +36,11 @@ int	main(void)
 		printf("Error1\n");
 		return (1);
 	}
-	if (new_node -> content == my_content)
-		printf("%s\n", ((char *)(new_node -> content)));
+	if (new_node->content == my_content)
+		printf("%s\n", (char *)new_node->content);
 	else
 		printf("Error2\n");
-	if (new_node -> next == NULL)
+	if (new_node->next == NULL)
 		printf("NULL_OK\n");
 	else
 		printf("Error3\n");
