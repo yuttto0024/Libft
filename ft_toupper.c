@@ -6,12 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:30:28 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:51:10 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:20:18 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <ctype.h>
 #include "libft.h"
 
 int	ft_toupper(int c)

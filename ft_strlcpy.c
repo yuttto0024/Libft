@@ -6,11 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 15:44:52 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 16:00:56 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:19:46 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)

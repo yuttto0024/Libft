@@ -6,12 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 17:31:32 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 15:55:40 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:20:06 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

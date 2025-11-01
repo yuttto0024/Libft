@@ -6,12 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:31:58 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:47:43 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 19:45:13 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <ctype.h>
 #include "libft.h"
 
 int	ft_isalpha(int c)

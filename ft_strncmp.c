@@ -6,12 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 12:42:17 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:50:30 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:19:57 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

@@ -6,12 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:20:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 16:17:38 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:18:36 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <ctype.h>
 #include "libft.h"
 
 int	ft_isprint(int c)

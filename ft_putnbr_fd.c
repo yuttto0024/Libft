@@ -6,12 +6,10 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/30 20:06:04 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 13:20:00 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 20:19:24 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
-//#include <fcntl.h>
 #include "libft.h"
 
 void	ft_printnb(int n, int fd)
