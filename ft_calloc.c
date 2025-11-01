@@ -6,56 +6,56 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 14:25:50 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:47:08 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 19:40:04 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	total_size;
 	void	*p;
-	size_t	i;
 
-	if (size != 0 && (nmemb > SIZE_MAX / size))
+	if (size != 0 && nmemb > SIZE_MAX / size)
 		return (NULL);
 	total_size = nmemb * size;
 	p = (void *)malloc(total_size);
 	if (p == NULL)
 		return (NULL);
-	i = 0;
-	while (total_size > i)
-	{
-		((char *)p)[i] = '\0';
-		i++;
-	}
+	ft_memset(p, 0, total_size);
 	return (p);
 }
 
 /*
 int	main(void)
 {
-	size_t	nmemb;
-	size_t	size;
-	int	*p;
+	int		*p;
 
-	p = ft_calloc(5, sizeof(int));
-	size_t i = 0;
-	int		all_zero = 1;
-	while (i < 5)
-	{
-		if (p[i] != 0)
-			all_zero = 0;
-		printf("p[%zu] = %d\n", i, p[i]);
-		i++;
-	}
-	if (all_zero == 1)
-		printf("Successfully\n");
+	p = ft_calloc(SIZE_MAX, 2);
+	if (p != NULL)
+		printf("Failed1\n");
 	else
-		printf("Fault\n");
-	
-	free(p);
+	{
+		printf("ft_calloc returned NULL by overflow\n");
+		free(p);
+	}
+	p = ft_calloc(5, 0);
+	if (p == NULL)
+		printf("Failed2\n");
+	else
+	{
+		printf("Returned a valid p\n");
+		free(p);
+	}
+	p = ft_calloc(5, 0);
+	if (p == NULL)
+		printf("Failed3\n");
+	else
+	{
+		printf("Returned a valid p\n");
+		free(p);
+	}
+	return (0);
 }
 */
