@@ -6,22 +6,11 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 16:31:57 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:50:10 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 16:00:40 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
 #include "libft.h"
-
-size_t	ft_strlen(const char *src)
-{
-	size_t	i;
-
-	i = 0;
-	while (src[i])
-		i++;
-	return (i);
-}
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {

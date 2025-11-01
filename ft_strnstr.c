@@ -6,23 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 17:26:15 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:50:36 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 16:01:11 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 //#include <string.h>
 #include "libft.h"
-
-size_t	ft_strlen(const char *little)
-{
-	size_t	i;
-
-	i = 0;
-	while (little[i])
-		i++;
-	return (i);
-}
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
