@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:21:05 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 14:49:37 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 15:53:20 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0')
 		return ((char *)&s[i]);
 	return (NULL);
 }
@@ -33,11 +33,11 @@ char	*ft_strchr(const char *s, int c)
 /*
 int	main(void)
 {
-	char	str[] = "Happy new year";
+	char	str[] = "teste";
 	char	*result;
 	int		search;
 
-	search = 'n';
+	search = 'e';
 	printf("---strchr---\n");
 	result = strchr(str, search);
 	printf("Address: %p\n", result);
