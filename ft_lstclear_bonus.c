@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 20:53:15 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/31 21:16:05 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/01 11:49:44 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		return ;
 	while (*lst != NULL)
 	{
-		next = (*lst) -> next;
+		next = *lst -> next;
 		ft_lstdelone(*lst, del);
 		*lst = next;
 	}
