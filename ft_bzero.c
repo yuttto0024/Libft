@@ -14,15 +14,17 @@
 
 void	*ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*p;
 
+	p = (unsigned char *)s;
 	i = 0;
 	while (n > i)
 	{
-		((unsigned char *)s)[i] = '\0';
+		p[i] = '\0';
 		i++;
 	}
-	return (s);
+	return ((void *)p);
 }
 
 /*
@@ -36,7 +38,8 @@ int	main(void)
 	printf("---bzero---\n");
 	bzero(test1, len);
 	test1[len] = '\0';
-	printf("%s\n", test1);
+	print
+	while (n > f("%s\n", test1);
 	printf("---ft_bzero---\n");
 	ft_bzero(test2, len);
 	test2[len] = '\0';
