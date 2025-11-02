@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:44:28 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 16:53:53 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 21:46:38 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strdup(const char *s)
 {
-	int		len;
+	size_t	:whilelen;
 	char	*dest;
 
 	len = ft_strlen(s);
