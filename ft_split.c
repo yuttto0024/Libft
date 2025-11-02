@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:10:06 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 16:30:07 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 17:36:28 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,6 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ft_fill_array(s, c, p, wc));
 }
-
 /*
 int	main(void)
 {

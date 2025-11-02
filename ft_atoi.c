@@ -6,11 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 10:52:15 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 15:58:58 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 17:59:30 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <stdlib.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -35,10 +37,27 @@ int	ft_atoi(const char *nptr)
 	return (result * sign);
 }
 
-/*
-int	main(void)
-{
-	char	test[] = "-2147483648";
-	printf("%d", ft_atoi(test));
-}
-*/
+// int	main(void)
+// {
+// 	const char	*test_str;
+
+// 	test_str = "+42";
+// 	printf("ft_atoi:%d\n", ft_atoi(test_str));
+// 	printf("atoi   :%d\n", atoi(test_str));
+
+// 	test_str = "+4242pp4242";
+// 	printf("ft_atoi:%d\n", ft_atoi(test_str));
+// 	printf("atoi   :%d\n", atoi(test_str));
+
+// 	test_str = "-2147483648";
+// 	printf("ft_atoi:%d\n", ft_atoi(test_str));
+// 	printf("atoi   :%d\n", atoi(test_str));
+
+// 	test_str = "-2147483649";
+// 	printf("ft_atoi:%d\n", ft_atoi(test_str));
+// 	printf("atoi   :%d\n", atoi(test_str));
+
+// 	test_str = "    \n\t\v\f\r-123 456";
+// 	printf("ft_atoi:%d\n", ft_atoi(test_str));
+// 	printf("atoi   :%d\n", atoi(test_str));
+// }
