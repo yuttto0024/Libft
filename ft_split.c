@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:10:06 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 16:12:14 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 16:30:07 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ char	**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	wc = ft_word_count(s, c);
-	p = (char **)ft_calloc(sizeof(char *) * (wc + 1), 1);
+	p = (char **)ft_calloc(sizeof(char *) * (wc + 1), sizeof(char *));
 	if (p == NULL)
 		return (NULL);
 	return (ft_fill_array(s, c, p, wc));
