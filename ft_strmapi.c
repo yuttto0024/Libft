@@ -25,14 +25,14 @@ static char	ft_test_function(unsigned int i, char c)
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*p;
-	int		len;
-	int		i;
+	char			*p;
+	size_t			len;
+	unsigned int	i;
 
 	if (s == NULL || f == NULL)
 		return (NULL);
 	len = ft_strlen(s);
-	p = (char *)ft_calloc(len + 1, 1);
+	p = (char *)ft_calloc(len + 1, sizeof(char));
 	if (p == NULL)
 		return (NULL);
 	i = 0;

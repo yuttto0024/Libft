@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 20:03:53 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 19:04:41 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 22:03:53 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	*ft_itoa(int n)
 	len = ft_digit_caluc(ln);
 	if (is_negative)
 		len++;
-	p = (char *)ft_calloc(len + 1, 1);
+	p = (char *)ft_calloc(len + 1, sizeof(char));
 	if (p == NULL)
 		return (NULL);
 	return (ft_fill_string(p, ln, len, is_negative));

@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:39:20 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 16:21:37 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 22:04:52 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	start = get_start_index(s1, set);
 	if (s1[start] == '\0')
-		return (ft_calloc(1, 1));
+		return (ft_calloc(1, sizeof(char)));
 	end = get_end_index(s1, set, start);
 	trim_len = (end - start) + 1;
-	trim = (char *)ft_calloc(end - start + 2, 1);
+	trim = (char *)ft_calloc(end - start + 2, sizeof(char));
 	if (trim == NULL)
 		return (NULL);
 	ft_memcpy(trim, s1 + start, trim_len);
