@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:56:18 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 18:30:38 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:58:40 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
 
 /*
