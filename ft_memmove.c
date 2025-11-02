@@ -6,13 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:05:23 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 20:19:09 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 21:25:27 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-//#include <string.h>
 #include "libft.h"
+// #include <stdio.h>
+// #include <string.h>
 
 static void	ft_copy_backward(unsigned char *d, const unsigned char *s, size_t n)
 {
@@ -42,8 +42,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	if (d == s || n == 0)
-		return (dest);
 	if (d > s)
 		ft_copy_backward(d, s, n);
 	else
@@ -61,15 +59,16 @@ int	main(void)
 	char	*dest;
 	char	*src;
 	
-	printf("---memmove_foreward---\n");
-	dest = &test1[1];
-	src = &test1[3];
-	memmove(dest, src, 3);
-	printf("%s\n", test1);
+	// printf("---memmove_foreward---\n");
+	// dest = NULL;
+	// src = NULL;
+	// memmov#include <stdio.h>
+// #include <string.h>e(dest, src, 3);
+	// printf("%s\n", test1);
 
 	printf("---ft_memmove_foreward---\n");
-	dest = &test2[1];
-	src = &test2[3];
+	dest = NULL;
+	src = NULL;
 	ft_memmove(dest, src, 3);
 	printf("%s\n", test2);
 
