@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/01 11:52:33 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 20:18:53 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 19:51:41 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	test_func(void *content)
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (lst == NULL)
+	if (lst == NULL || f == NULL)
 		return ;
 	while (lst != NULL)
 	{
