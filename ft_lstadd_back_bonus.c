@@ -6,11 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/31 19:22:32 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 20:18:42 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 19:11:00 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <fcntl.h>
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
@@ -24,7 +25,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	}
 	last_add = ft_lstlast(*lst);
-	last_add -> next = new;
+	last_add->next = new;
 }
 
 /*

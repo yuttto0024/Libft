@@ -6,13 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 14:25:50 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 18:33:42 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 19:07:59 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
-//#include <stdint.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

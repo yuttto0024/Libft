@@ -6,13 +6,12 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/25 10:52:15 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 17:59:30 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 19:07:22 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
-//#include <stdlib.h>
 
 int	ft_atoi(const char *nptr)
 {
