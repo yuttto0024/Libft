@@ -6,27 +6,27 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 20:38:02 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 16:55:11 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 20:19:05 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <string.h>
-//#include <stdio.h>
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*t;
-	unsigned char		sc;
+	const unsigned char	*src;
+	unsigned char		target;
 	size_t				i;
 
-	t = (const unsigned char *)s;
-	sc = (unsigned char)c;
+	src = (const unsigned char *)s;
+	target = (unsigned char)c;
 	i = 0;
 	while (i < n)
 	{
-		if (t[i] == sc)
-			return ((void *)&t[i]);
+		if (src[i] == target)
+			return ((void *)&src[i]);
 		i++;
 	}
 	return (NULL);
