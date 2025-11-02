@@ -6,11 +6,13 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:56:18 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 13:53:22 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:30:38 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <ctype.h>
 
 int	ft_isalnum(int c)
 {
@@ -22,6 +24,7 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+
 /*
 int	main(void)
 {

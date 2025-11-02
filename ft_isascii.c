@@ -6,18 +6,19 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 11:06:21 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 20:18:29 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:35:20 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <ctype.h>
 
 int	ft_isascii(int c)
 {
-	if (c >= '\0' && c <= 127)
-		return (1);
-	return (0);
+	return (c >= '\0' && c <= 127);
 }
+
 /*
 int	main(void)
 {

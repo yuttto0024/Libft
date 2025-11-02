@@ -6,20 +6,19 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:31:58 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 19:45:13 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:37:38 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <ctype.h>
 
 int	ft_isalpha(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
+	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'));
 }
+
 /*
 int	main(void)
 {

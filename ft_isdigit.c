@@ -6,18 +6,19 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 10:38:31 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/01 20:18:32 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:35:51 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//#include <stdio.h>
+//#include <ctype.h>
 
 int	ft_isdigit(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	return (c >= '0' && c <= '9');
 }
+
 /*
 int	main(void)
 {

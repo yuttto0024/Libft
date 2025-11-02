@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:43:45 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 17:36:58 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 18:33:21 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
