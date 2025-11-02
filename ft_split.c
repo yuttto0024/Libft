@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 17:10:06 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/28 17:14:07 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 16:12:14 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,10 +46,10 @@ static void	*free_all(char **result, size_t i)
 
 static char	**ft_fill_array(char const *s, char c, char **p, size_t wc)
 {
-	size_t			i;
-	size_t			j;
-	size_t			len;
-	unsigned int	start;
+	size_t	i;
+	size_t	j;
+	size_t	len;
+	size_t	start;
 
 	i = 0;
 	j = 0;
@@ -57,14 +57,14 @@ static char	**ft_fill_array(char const *s, char c, char **p, size_t wc)
 	{
 		while (s[j] == c)
 			j++;
-		start = (unsigned int)j;
+		start = j;
 		len = 0;
 		while (s[j] && s[j] != c)
 		{
 			j++;
 			len++;
 		}
-		p[i] = ft_substr(s, start, len);
+		p[i] = ft_substr(&s[start], 0, len);
 		if (p[i] == NULL)
 			return (free_all(p, i));
 		i++;
