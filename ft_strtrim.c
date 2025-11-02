@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/26 16:39:20 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/10/26 17:09:51 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/02 16:21:37 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	trim_len;
 
-	if (s1 == NULL)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
-	if (set == NULL)
-		trim = ft_strdup(s1);
 	start = get_start_index(s1, set);
 	if (s1[start] == '\0')
 		return (ft_calloc(1, 1));
@@ -73,7 +71,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 int	main(void)
 {
 	char	s1[] = "-abHappyaab";
-	char	set[] = "ab-";
+	char	*set = NULL;
 	char	*trim;
 
 	trim = ft_strtrim(s1, set);
