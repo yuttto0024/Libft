@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 20:33:24 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 21:13:35 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/03 15:38:00 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
+	if (n > 0 && (dest == NULL && src == NULL))
+		return (NULL);
 	i = 0;
 	while (n > i)
 	{

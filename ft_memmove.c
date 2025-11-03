@@ -6,7 +6,7 @@
 /*   By: yuonishi <yuonishi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:05:23 by yuonishi          #+#    #+#             */
-/*   Updated: 2025/11/02 21:25:27 by yuonishi         ###   ########.fr       */
+/*   Updated: 2025/11/03 15:35:59 by yuonishi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
+	if (n > 0 && (dest == NULL && src == NULL))
+		return (NULL);
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
 	if (d > s)
